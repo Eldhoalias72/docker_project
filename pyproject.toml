@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fastapi-mongodb-app"
+version = "1.0.0"
+description = "Simple FastAPI app with MongoDB integration"
+authors = ["Eldho P ALias <eldhoalias72@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+motor = "^3.3.2"
+pydantic = "^2.5.0"
+redis = "^5.0.1"
+aio-pika = "^9.3.1"
+celery = "^5.3.4"
+python-jose = {extras = ["cryptography"], version = "^3.4.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+bcrypt = "^4.3.0"
+python-multipart = "^0.0.20"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
